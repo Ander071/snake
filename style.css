@@ -1,0 +1,75 @@
+body,html{
+	margin: 0;
+	height: 100%;
+}
+body{
+	display: flex;
+}
+canvas{
+	border: 20px solid #578A34;
+	background-color: #8ECC39;
+	background-image: linear-gradient(45deg, #A7D948 25%, transparent 25%, transparent 75%, #A7D948 75%, #A7D948),
+		linear-gradient(45deg, #A7D948 25%, transparent 25%, transparent 75%, #A7D948 75%, #A7D948);
+	background-size: 120px 120px;
+	background-position: 0 0,
+		60px 60px;
+		margin: auto;
+}
+#modal_score{
+	position: absolute;
+	/*background-color: orange;*/
+	/*height: 100px;
+	width: 200px;*/
+	font-size: 40px;
+	padding: 20px 40px;
+	border-radius: 5px;
+	left: 2%;
+	/*margin: auto;*/
+	/*bottom: 45%;*/
+	top: 30%;
+}
+#modal_score p {
+	margin: 0;
+	text-align: center;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight: 700;
+}
+
+.snake{
+	display: flex;
+	flex-direction: column;
+	/*display: none;*/
+	font-size: 0;
+}
+
+.shead{
+	transform: rotate(-90deg);
+}
+
+.sbody{
+	transform: rotate(-90deg);
+}
+.stail{
+	transform: rotate(-90deg);
+}
+.massage{
+	padding: 10px 10px;
+	border-radius: 5px;
+	border: 5px solid black;
+	position: relative;
+}
+img{
+	/*display: block;*/
+	margin: 0;
+	height: 80px;
+	width: 80px;
+}
+
+.massage::after {
+    content: ''; 
+    position: absolute;
+    left: 20px; bottom: -20px;
+    border: 10px solid transparent; 
+    border-top: 10px solid black; 
+    bottom: -25px;
+   }

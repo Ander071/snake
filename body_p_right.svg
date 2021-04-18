@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+	
+<path  d="M10 60 A 20 20 1 1 1 50 60" stroke="black" fill="#FD6347" stroke-width="3" ></path>
+
+<circle cx="30" cy="30" r="20" fill="#FD6347" stroke="black" stroke-width="3" ></circle>
+
+ <path  d="M60 10 A 20 20 1 0 0 60 50" stroke="black" fill="#FD6347" stroke-width="3" ></path>
+
+</svg>
