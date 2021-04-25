@@ -17,6 +17,7 @@ let promises = [];
 
 let count = 0;
 
+let speed = 30;
 let deg;
 let x = 450;
 let y = 270;
@@ -160,7 +161,7 @@ Promise.all(promises)
     .then(function draw() {
         //задержка в рисовании
         let frame = requestAnimationFrame(draw);
-        if (++count < 25) {
+        if (++count < speed) {
             return
         }
 
@@ -174,6 +175,9 @@ Promise.all(promises)
         if ((snake_new.x[0] == food.x) && (snake_new.y[0] == food.y)) {
             snake_new.size++;
             p.innerText = snake_new.size - 3;
+            if (snake_new.size % 5 == 0) {
+                speed = speed - 1;
+            }
 
             food.clear();
 
